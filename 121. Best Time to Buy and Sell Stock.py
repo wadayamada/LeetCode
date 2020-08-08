@@ -10,9 +10,11 @@ class Solution:
             buy=prices[0]
             
             for price in prices[1:]:
+                
                 if price<buy:
                     buy=price
-                if price-buy>profit:
+                    
+                elif price-buy>profit:
                     sell=price
                     profit=sell-buy                    
         
